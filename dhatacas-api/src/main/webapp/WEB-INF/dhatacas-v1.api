@@ -1,0 +1,125 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://disco-glass-634.appspot.com/_ah/api",
+  "name" : "dhatacas",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://disco-glass-634.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "dhatacas.socialactivity.follow" : {
+      "path" : "follow/{id}",
+      "httpMethod" : "post",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "167191929228-lgh170fter8im7l77lu90a1gl1oobpeb.apps.googleusercontent.com" ],
+      "clientIds" : [ "167191929228-lgh170fter8im7l77lu90a1gl1oobpeb.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
+      "rosyMethod" : "com.dhatacas.api.endpoints.SocialActivityBean.follow",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "dhatacas.socialactivity.dislike" : {
+      "path" : "dislike/{id}",
+      "httpMethod" : "post",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "167191929228-lgh170fter8im7l77lu90a1gl1oobpeb.apps.googleusercontent.com" ],
+      "clientIds" : [ "167191929228-lgh170fter8im7l77lu90a1gl1oobpeb.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
+      "rosyMethod" : "com.dhatacas.api.endpoints.SocialActivityBean.dislike",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "dhatacas.socialactivity.like" : {
+      "path" : "like/{id}",
+      "httpMethod" : "post",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "167191929228-lgh170fter8im7l77lu90a1gl1oobpeb.apps.googleusercontent.com" ],
+      "clientIds" : [ "167191929228-lgh170fter8im7l77lu90a1gl1oobpeb.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
+      "rosyMethod" : "com.dhatacas.api.endpoints.SocialActivityBean.like",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "SocialActivity" : {
+        "id" : "SocialActivity",
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "like" : {
+            "type" : "boolean"
+          },
+          "dislike" : {
+            "type" : "boolean"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.dhatacas.api.endpoints.SocialActivityBean.follow" : {
+      },
+      "com.dhatacas.api.endpoints.SocialActivityBean.dislike" : {
+        "response" : {
+          "$ref" : "SocialActivity"
+        }
+      },
+      "com.dhatacas.api.endpoints.SocialActivityBean.like" : {
+        "response" : {
+          "$ref" : "SocialActivity"
+        }
+      }
+    }
+  }
+}

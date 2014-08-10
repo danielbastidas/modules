@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dhatacas-modules-ear 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> appengine-maven-plugin:1.9.7:devserver (default-cli) @ dhatacas-modules-ear >>>
+[INFO] 
+[INFO] --- maven-ear-plugin:2.9:generate-application-xml (default-generate-application-xml) @ dhatacas-modules-ear ---
+[INFO] Generating application.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ dhatacas-modules-ear ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\src\main\resources
+[INFO] 
+[INFO] --- maven-ear-plugin:2.9:ear (default-ear) @ dhatacas-modules-ear ---
+[INFO] Copying artifact [war:com.dhatacas.appengine:dhatacas-channels:1.0] to [dhatacas-channels-1.0.war] (unpacked)
+[INFO] Copying artifact [war:com.dhatacas.appengine:dhatacas-endpoints:1.0] to [dhatacas-endpoints-1.0.war] (unpacked)
+[INFO] Copying artifact [war:com.dhatacas.appengine:dhatacas-tasks:1.0] to [dhatacas-tasks-1.0.war] (unpacked)
+[INFO] Copy ear sources to C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0
+[INFO] Including custom application.xml[C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear/src/main/application/META-INF/maven-application.xml]
+[INFO] Including custom manifest file [C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\META-INF\MANIFEST.MF]
+[INFO] Building jar: C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0.ear
+[INFO] 
+[INFO] <<< appengine-maven-plugin:1.9.7:devserver (default-cli) @ dhatacas-modules-ear <<<
+[INFO] 
+[INFO] --- appengine-maven-plugin:1.9.7:devserver (default-cli) @ dhatacas-modules-ear ---
+[INFO] 
+[INFO] Google App Engine Java SDK - Running Development Server
+[INFO] 
+[INFO] Retrieving Google App Engine Java SDK from Maven
+[INFO] Running C:\Program Files\Java\jdk1.7.0_45\jre\bin\java -D--enable_all_permissions=true -Xbootclasspath/p:C:\Users\daniel.bastidas\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.7\appengine-java-sdk\appengine-java-sdk-1.9.7\lib\override\appengine-dev-jdk-overrides.jar -Dappengine.fullscan.seconds=5 -classpath C:\Users\daniel.bastidas\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.7\appengine-java-sdk\appengine-java-sdk-1.9.7\lib\appengine-tools-api.jar com.google.appengine.tools.development.DevAppServerMain --allow_remote_shutdown --no_java_agent C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target/dhatacas-modules-ear-1.0
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.config.AppEngineWebXmlReader readAppEngineWebXml
+[INFO] INFO: Successfully processed C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-endpoints-1.0.war\WEB-INF/appengine-web.xml
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.config.AbstractConfigXmlReader readConfigXml
+[INFO] INFO: Successfully processed C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-endpoints-1.0.war\WEB-INF/web.xml
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.config.AppEngineWebXmlReader readAppEngineWebXml
+[INFO] INFO: Successfully processed C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-channels-1.0.war\WEB-INF/appengine-web.xml
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.config.AbstractConfigXmlReader readConfigXml
+[INFO] INFO: Successfully processed C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-channels-1.0.war\WEB-INF/web.xml
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.config.AppEngineWebXmlReader readAppEngineWebXml
+[INFO] INFO: Successfully processed C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-tasks-1.0.war\WEB-INF/appengine-web.xml
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.config.AbstractConfigXmlReader readConfigXml
+[INFO] INFO: Successfully processed C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-tasks-1.0.war\WEB-INF/web.xml
+[INFO] Jul 30, 2014 9:10:58 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+[INFO] INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\daniel.bastidas\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.7\appengine-java-sdk\appengine-java-sdk-1.9.7\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-endpoints-1.0.war\WEB-INF\appengine-web.xml'
+[INFO] Jul 30, 2014 9:10:58 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+[INFO] INFO: Overwriting system property key 'java.util.logging.config.file', value 'WEB-INF/logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-channels-1.0.war\WEB-INF\appengine-web.xml'
+[INFO] Jul 30, 2014 9:10:58 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+[INFO] INFO: Overwriting system property key 'java.util.logging.config.file', value 'WEB-INF/logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-tasks-1.0.war\WEB-INF\appengine-web.xml'
+[INFO] Jul 30, 2014 9:10:58 PM com.google.appengine.tools.development.DevAppServerImpl <init>
+[INFO] INFO: Ignoring application.xml context-root element, for details see https://developers.google.com/appengine/docs/java/modules/#config
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
+[INFO] Jul 30, 2014 9:10:58 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+[INFO] WARNING: Your working directory, (C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0) is not equal to your 
+[INFO] web application root (C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-endpoints-1.0.war)
+[INFO] You will not be able to access files from your working directory on the production server.
+[INFO] 
+[INFO] Jul 30, 2014 9:10:58 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] INFO: jetty-6.1.x
+[INFO] Jul 30, 2014 9:11:00 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] INFO: Started SelectChannelConnector@127.0.0.1:8080
+[INFO] Jul 30, 2014 9:11:00 PM com.google.appengine.tools.development.JettyContainerService startHotDeployScanner
+[INFO] INFO: Full scan of the web app in place every 5s.
+[INFO] Jul 30, 2014 9:11:00 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] INFO: Module instance endpoints is running at http://localhost:8080/
+[INFO] Jul 30, 2014 9:11:00 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] INFO: The admin console is running at http://localhost:8080/_ah/admin
+[INFO] Jul 30, 2014 9:11:00 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+[INFO] WARNING: Your working directory, (C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0) is not equal to your 
+[INFO] web application root (C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-channels-1.0.war)
+[INFO] You will not be able to access files from your working directory on the production server.
+[INFO] 
+[INFO] Jul 30, 2014 9:11:00 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] INFO: jetty-6.1.x
+[INFO] Jul 30, 2014 9:11:01 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] INFO: Started SelectChannelConnector@127.0.0.1:50312
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.JettyContainerService startHotDeployScanner
+[INFO] INFO: Full scan of the web app in place every 5s.
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] INFO: Module instance default is running at http://localhost:50312/
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] INFO: The admin console is running at http://localhost:50312/_ah/admin
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+[INFO] WARNING: Your working directory, (C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0) is not equal to your 
+[INFO] web application root (C:\Users\daniel.bastidas\AppEngineQueue\dhatacas-modules\dhatacas-modules-ear\target\dhatacas-modules-ear-1.0\dhatacas-tasks-1.0.war)
+[INFO] You will not be able to access files from your working directory on the production server.
+[INFO] 
+[INFO] Jul 30, 2014 9:11:01 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] INFO: jetty-6.1.x
+[INFO] Jul 30, 2014 9:11:01 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] INFO: Started SelectChannelConnector@127.0.0.1:50313
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.JettyContainerService startHotDeployScanner
+[INFO] INFO: Full scan of the web app in place every 5s.
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] INFO: Module instance tasks is running at http://localhost:50313/
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] INFO: The admin console is running at http://localhost:50313/_ah/admin
+[INFO] Jul 30, 2014 9:11:01 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+[INFO] INFO: Dev App Server is now running
+Terminate batch job (Y/N)? 
